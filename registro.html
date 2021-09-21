@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Registro</title>
+</head>
+<body>
+    <section class="form__section">
+        <form id="form_registrar_usuario" required class="form__card">
+            <input
+                id="nombre_usuario_input"
+                required
+                placeholder="Nombre usuario"
+                class="form__input"
+                type="name"
+                name="name"
+            >
+            <input
+                id="anoNacimiento_usuario_input"
+                placeholder="Año Nacimiento"
+                required
+                class="form__input"
+                value="2021-07-22"
+                min="1999-01-01" max="2021-12-31"
+                type="date"
+                name="date"
+            >
+            <input
+                id="contrasena_usuario_input"
+                placeholder="Contraseña"
+                required
+                class="form__input"
+                type="password"
+                name="password"
+            >
+            <input
+                id="confirmar_contrasena_input"
+                placeholder="Confirmar Contraseña"
+                required
+                class="form__input"
+                type="password"
+                name="repeat-password"
+            >
+            <button
+                id="enviar_registro"
+                type="submit"
+                class="form__btn"
+            >
+                Enviar
+            </button>
+        </form>
+    </section>
+</body>
+</html>
